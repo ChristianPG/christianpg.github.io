@@ -6,8 +6,6 @@
 }
 
 .profilePhoto {
-  height: 20em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+  max-height: 20em;
+  border-radius: var(--image-corners);
 }
