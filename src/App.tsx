@@ -6,7 +6,7 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 function App() {
   return (
     <>
-      <header>
+      <header className="mainHeader">
         <div>
           <img
             src={profileImage}
@@ -17,7 +17,7 @@ function App() {
         <h1>Christian Patiño</h1>
         <h2>Senior Frontend Developer</h2>
       </header>
-      <main>
+      <main className="mainSection">
         <p>
           Systems engineer with 9+ years of experience focused on front-end
           software development using React and Typescript. Extensive background
@@ -27,7 +27,7 @@ function App() {
         </p>
         <h3>WIP</h3>
       </main>
-      <footer>
+      <footer className="mainFooter">
         <a
           href="https://www.linkedin.com/in/christianpg"
           target="_blank"

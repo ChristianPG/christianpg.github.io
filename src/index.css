@@ -4,6 +4,7 @@
   /* Colors */
   --dark-background: #242424;
   --light-background: #ffffff;
+  --dark-font-color: #f9f9f9;
   --light-font-color: #213547;
   --dark-link: #646cff;
   --dark-link--hover: #535bf2;
@@ -17,16 +18,34 @@
   --image-corners: 24px;
   /* Decorators */
 
-  /* Variables */
+  /* Defaults */
+  --base-font-size: 1rem;
+}
 
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  box-sizing: inherit;
+}
+
+body {
+  background-color: var(--dark-background);
+  color-scheme: light dark;
+  color: var(--dark-font-color);
+
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+
+  font-size: var(--base-font-size);
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: var(--dark-background);
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -42,16 +61,12 @@ a:hover {
   color: var(--dark-link--hover);
 }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
 h1 {
-  font-size: 3.2em;
+  font-size: calc(var(--base-font-size) * 2.9);
+  line-height: 1.1;
+}
+h2 {
+  font-size: calc(var(--base-font-size) * 1.5);
   line-height: 1.1;
 }
 
@@ -75,7 +90,7 @@ button:focus-visible {
 }
 
 @media (prefers-color-scheme: light) {
-  :root {
+  body {
     color: var(--light-font-color);
     background-color: var(--light-background);
   }

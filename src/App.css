@@ -5,6 +5,26 @@
   text-align: center;
 }
 
+.mainHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.mainSection {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.mainFooter {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  margin-top: 48px;
+}
+
 .profilePhoto {
   max-height: 20em;
   border-radius: var(--image-corners);
