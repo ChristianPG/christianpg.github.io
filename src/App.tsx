@@ -15,15 +15,18 @@ function App() {
           />
         </div>
         <h1>Christian Patiño</h1>
-        <h2>Senior Frontend Developer</h2>
+        <h2>Senior Software Engineer</h2>
       </header>
       <main className="mainSection">
         <p>
-          Systems engineer with 9+ years of experience focused on front-end
-          software development using React and Typescript. Extensive background
-          in the full software development life cycle including requirements
-          definition, evaluation, design, implementation, testing, and
-          maintenance.
+          Software engineer with 10+ years of experience as a full stack
+          developer, specializing in frontend development with React,
+          TypeScript, and scalable UI architectures, complemented by backend
+          expertise in Node.js. Proven track record of improving system
+          performance and leading successful projects from concept to delivery.
+          Strong collaborator in cross-functional teams, with a focus on
+          building high-quality, maintainable solutions and continuously
+          expanding technical expertise.
         </p>
         <h3>WIP</h3>
       </main>
