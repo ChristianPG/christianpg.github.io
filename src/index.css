@@ -89,19 +89,27 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+img {
+  max-width: 100%;
+}
+
 @media (prefers-color-scheme: light) {
   body {
     color: var(--light-font-color);
     background-color: var(--light-background);
   }
+
   a:hover {
     color: var(--light-link--hover);
   }
+
   button {
     background-color: var(--light-button-background);
   }
 }
 
-img {
-  max-width: 100%;
+@media (min-width: 900px) {
+  :root {
+    --base-font-size: 1.125rem;
+  }
 }
