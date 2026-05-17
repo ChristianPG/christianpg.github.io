@@ -12,10 +12,13 @@
   --dark-button-background: #1a1a1a;
   --light-button-background: #f9f9f9;
   --dark-button-border-color--hover: #646cff;
+
+  --border-color: #535bf2;
   /* Colors */
 
   /* Decorators */
   --image-corners: 24px;
+  --card-corners: 12px;
   /* Decorators */
 
   /* Defaults */
@@ -62,12 +65,17 @@ a:hover {
 }
 
 h1 {
-  font-size: calc(var(--base-font-size) * 2.9);
+  font-size: calc(var(--base-font-size) * 3.2);
   line-height: 1.1;
 }
 h2 {
-  font-size: calc(var(--base-font-size) * 1.3);
+  font-size: calc(var(--base-font-size) * 1.8);
   line-height: 1.1;
+}
+h3 {
+  font-size: calc(var(--base-font-size) * 1.2);
+  line-height: 1.1;
+  font-weight: 600;
 }
 
 button {

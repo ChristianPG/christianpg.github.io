@@ -1,0 +1,27 @@
+.projectsSection {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.projectsList {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.projectCard {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100px;
+  border-radius: var(--card-corners);
+  border: 1px solid var(--border-color);
+  gap: 8px;
+}
+
+@media (min-width: 900px) {
+  .projectsList {
+    grid-template-columns: 1fr 1fr;
+  }
+}
