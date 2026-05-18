@@ -4,10 +4,14 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import ProjectsModule from "@/modules/Projects/Projects";
 
 import "./App.css";
+import ThemeSwitch from "./components/ThemeSwitch/ThemeSwitch";
 
 function App() {
   return (
     <>
+      <header>
+        <ThemeSwitch />
+      </header>
       <main className="mainContent">
         <div className="profileLayout">
           <div className="profileSummary">

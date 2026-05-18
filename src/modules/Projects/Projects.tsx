@@ -10,6 +10,7 @@ function ProjectsModule() {
       <div className="projectsList">
         {PROJECTS.map((project) => (
           <ProjectCard
+            key={project.clientName}
             clientName={project.clientName}
             link={project.link}
             linkTitle={project.linkTitle}

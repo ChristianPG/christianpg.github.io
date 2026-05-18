@@ -4,6 +4,12 @@
   padding: 2rem;
 }
 
+header {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 48px;
+}
+
 .mainContent {
   display: flex;
   flex-direction: column;
@@ -31,17 +37,17 @@
   text-align: center;
 }
 
+.profilePhoto {
+  max-height: 20em;
+  border-radius: var(--image-corners);
+  object-fit: contain;
+}
+
 .mainFooter {
   display: flex;
   gap: 32px;
   justify-content: center;
   margin-top: 48px;
-}
-
-.profilePhoto {
-  max-height: 20em;
-  border-radius: var(--image-corners);
-  object-fit: contain;
 }
 
 @media (min-width: 900px) {
